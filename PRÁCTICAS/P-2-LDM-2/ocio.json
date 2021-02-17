@@ -2,6 +2,10 @@
     "Ciudad": "Palencia",
     "Comunidad": "Castilla y León",
     "Habitantes": "75.000",
+    "ubicacion":{
+        "latitud": "11111",
+        "longitud": "2222222"
+    },
     "Bares": [
         {
             "Nombre": "Lina Morgan Freeman",
