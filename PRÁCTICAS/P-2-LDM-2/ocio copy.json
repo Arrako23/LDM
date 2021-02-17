@@ -1,0 +1,78 @@
+{
+    "Ciudad": "Palencia",
+    "Comunidad": "Castilla y León",
+    "Habitantes": "75.000",
+    "Bares": [
+        {
+            "Nombre": "Lina Morgan Freeman",
+            "Coste": "Económico",
+            "Adaptación Movilidad Reducida": "No",
+            "Dirección": "C/Rizarzuela, 8",
+            "Tipo": "Pub",
+            "Recomendable": "4/5",
+            "Ubicación": "https://www.google.com/maps/dir//lina+morgan+freeman/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd47b0364917ae87:0x657e1fe93d02a406?sa=X&ved=2ahUKEwjYl5-V1p7uAhWnD2MBHTJYB90Q9RcwGnoECB8QAw"
+        },
+        {
+            "Nombre": "Café bar Edén",
+            "Coste": "Económico",
+            "Adaptación Movilidad Reducida": "Si",
+            "Dirección": "Avda. Los Vacceos, S/N",
+            "Tipo": "Café/Bocatas/Fútbol/Copas",
+            "Recomendable": "5/5",
+            "Ubicación": "https://www.google.com/maps/place/Bar+Eden/@42.0123106,-4.5300847,17z/data=!3m1!4b1!4m5!3m4!1s0xd47b1e942e20be7:0x4b20e235368e9d09!8m2!3d42.0123106!4d-4.527896"
+        },
+        {
+            "Nombre": "Pío XII",
+            "Coste": "Medio",
+            "Adaptación Movilidad Reducida": "Si",
+            "Dirección": "Plaza Pío XII, 5, 34005 Palencia",
+            "Tipo": "Cervecería/Tapería",
+            "Recomendable": "5/5",
+            "Ubicación": "https://www.google.com/maps/place/Pio+12+Cervecer%C3%ADa/@42.0052499,-4.5313115,19.5z/data=!4m13!1m7!3m6!1s0xd47b0376430964d:0xf847404ed37d4191!2sPlaza+P%C3%ADo+XII,+Palencia!3b1!8m2!3d42.0053357!4d-4.5310103!3m4!1s0xd47b0376677186d:0x81430c0d39c939fa!8m2!3d42.0053739!4d-4.5308679"
+        },
+        {
+            "Nombre": "Rivera 13",
+            "Coste": "Medio",
+            "Adaptación Movilidad Reducida": "Si",
+            "Dirección": "Av. Manuel Rivera, 13, 34002 Palencia",
+            "Tipo": "Cervecería/Tapería",
+            "Recomendable": "5/5",
+            "Ubicación": "https://www.google.com/maps/place/Rivera+13+Cerveceria/@42.0085861,-4.5291739,17z/data=!3m1!4b1!4m5!3m4!1s0xd47b0361b372e9d:0x4a2387b1815a3d25!8m2!3d42.0085861!4d-4.5269852"  
+        },
+        {
+            "Nombre": "Mesón La Cueva",
+            "Coste": "Alto",
+            "Adaptación Movilidad Reducida": "No",
+            "Dirección": "Avenida del Puente, 18o, 34209 Tariego de Cerrato, Palencia",
+            "Tipo": "Mesón/Asador",
+            "Recomendable": "5/5",
+            "Ubicación": "https://www.google.com/maps/place/Mes%C3%B3n+La+Cueva/@41.9041419,-4.4820708,17z/data=!4m12!1m6!3m5!1s0xd47a95664798b25:0x3cf4c5b63376eb64!2sMes%C3%B3n+La+Cueva!8m2!3d41.9041419!4d-4.4798821!3m4!1s0xd47a95664798b25:0x3cf4c5b63376eb64!8m2!3d41.9041419!4d-4.4798821"  
+        }
+    ],
+    "Ocio": [
+        {
+            "Nombre": "Cines Avenida",
+            "Adaptación Movilidad Reducida": "Si",
+            "Dirección": "Av. Valladolid, 10, BAJO, 34002 Palencia",
+            "Tipo": "Cine",
+            "Recomendable": "4/5",
+            "Ubicación": "https://www.google.com/maps/place/Multicines+Avenida/@42.0055449,-4.5339528,16z/data=!4m8!1m2!2m1!1scines+avenida!3m4!1s0xd47b0310ce1a861:0xd2c91f7a46491f9e!8m2!3d42.0019777!4d-4.5277032"  
+        },
+        {
+            "Nombre": "Bowling Sport",
+            "Adaptación Movilidad Reducida": "Si",
+            "Dirección": "Av. de Casado del Alisal, 22, 34001 Palencia",
+            "Tipo": "Bolera ",
+            "Recomendable": "4/5",
+            "Ubicación": "https://www.google.com/maps/place/Bowling+Sport+SL/@42.0108672,-4.5321258,17z/data=!3m1!4b1!4m5!3m4!1s0xd47b0485b6e06af:0x4ee1c96bc7192f23!8m2!3d42.0108672!4d-4.5299371"  
+        },
+        {
+            "Nombre": "Monte El Viejo",
+            "Adaptación Movilidad Reducida": "-",
+            "Dirección": "Lugar Monte El Viejo, 0 S/N, 34001 Palencia",
+            "Tipo": "Esparcimiento ",
+            "Recomendable": "5/5",
+            "Ubicación": "https://www.google.com/maps/place/La+Casa+Peque%C3%B1a/@41.9574796,-4.5839036,13z/data=!4m8!1m2!2m1!1smonte+el+viejo!3m4!1s0x0:0xaae79cc7e52e8693!8m2!3d41.9763776!4d-4.5505071"  
+        }
+    ]
+}

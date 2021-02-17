@@ -20,6 +20,7 @@
           <li>Comunidad: {{jsonObject.Comunidad}}</li> 
           <li>Habitantes: {{jsonObject.Habitantes}}</li> 
         </div>
+        <div class="alert alert-info" role="alert">
         <h1>BARES</h1>
         <div v-for="bar in jsonObject.Bares">
           <ul>
@@ -30,6 +31,8 @@
             <li>Recomendable: {{bar.Recomendable}}</li>
           </ul>
         </div>
+        </div>
+        <div class="alert alert-info" role="alert">
         <h1>OCIO</h1>
         <div v-for="ocio in jsonObject.Ocio">
           <ul>
@@ -39,6 +42,7 @@
             <li>Tipo: {{ocio.Tipo}}</li>
             <li>Recomendable: {{ocio.Recomendable}}</li>
           </ul>
+        </div>
         </div>
     </div>
 
