@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="app">
+            <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Unidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-active" v-for="ingrediente in jsonObject.Ingredientes">
+                    <td>{{ingrediente.Nombre}}</td>
+                    <td>{{ingrediente.Cantidad}}</td>
+                    <td>{{ingrediente.Unidad}}</td>
+                </tr>
+            </tbody>
+            </table>
+            <ul class="list-group">
+                <li class="list-group-item"><b><u>Proceso de preparación</u></b></li>
+              
+                
+                <li class="list-group-item list-group-item-primary" v-for="proceso in jsonObject.Proceso">{{proceso.Primero}}</li>
+                <li class="list-group-item list-group-item-secondary" v-for="proceso in jsonObject.Proceso">{{proceso.Segundo}}</li>
+                <li class="list-group-item list-group-item-success" v-for="proceso in jsonObject.Proceso">{{proceso.Tercero}}</li>
+                <li class="list-group-item list-group-item-danger" v-for="proceso in jsonObject.Proceso">{{proceso.Cuarto}}</li>
+                <li class="list-group-item list-group-item-warning" v-for="proceso in jsonObject.Proceso">{{proceso.Quinto}}</li>
+                <li class="list-group-item list-group-item-info" v-for="proceso in jsonObject.Proceso">{{proceso.Sexto}}</li>
+              </ul>
+        </div>
+
+
+        <script>
+
+            const App = new Vue({
+              el: '#app',
+              data: {
+                jsonObject: {}
+              },
+              methods: {
+                  init() {
+                    fetch("https://raw.githubusercontent.com/Arrako23/LDM/master/PR%C3%81CTICAS/P-2-LDM-1/receta.json")
+                    .then(response => response.json())
+                    .then(data => (this.jsonObject = data));
+                  }
+              },
+              mounted(){
+                  this.init()
+              }
+            })
+          </script>
+    </body>
+</html>
