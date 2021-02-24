@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <!--INFORMACIÓN DEL CANAL-->
+        <title>Las 5 noticias del día de EL País</title>
+        <description>Las 5 noticias destacadas de El País</description>
+        <link>https://elpais.com/</link>
+
+        <!--INFORAMCIÓN DE LOS ÍTEMS-->
+        <item>
+            <title>MotoGP</title>
+            <description>Espargaró no espera ser amigo de Márquez, pero sí “buen ambiente en el box”</description>
+            <link>https://es.motorsport.com/motogp/news/espargaro-amigo-marquez-buen-ambiente-box/5469230/</link>
+        </item>
+
+        <item>
+            <title>Baloncesto</title>
+            <description>El mensaje de Pau Gasol al Barça: "¡Vuelvo a casa!"</description>
+            <link>https://www.marca.com/baloncesto/acb/2021/02/23/6035439246163ff3158b45db.html</link>
+        </item>
+
+        <item>
+            <title>Fórmula 1</title>
+            <description>Sainz y Ferrari cierran el test de 18 pulgadas con 125 vueltas</description>
+            <link>https://es.motorsport.com/f1/news/sainz-ferrari-test-18-pulgadas-jerez-vueltas/5480455/</link>
+        </item>
+
+        <item>
+            <title>Fútbol</title>
+            <description>Colgados de Pedri</description>
+            <link>https://as.com/futbol/2021/02/24/primera/1614130559_095906.html</link>
+        </item>
+
+        <item>
+            <title>Ciclismo</title>
+            <description>Giro Italia 2021: recorrido, etapas, fechas y cuándo empieza</description>
+            <link>https://as.com/ciclismo/2021/02/24/giro_italia/1614172916_766605.html</link>
+        </item>
+
+        <item>
+            <title>Tenis</title>
+            <description>Murray sobre la NextGen: "No están ni cerca de Federer, Nadal o Djokovic"</description>
+            <link>https://as.com/tenis/2021/02/24/mas_tenis/1614157946_206606.html</link>
+        </item>
+
+    </channel>
+</rss>
