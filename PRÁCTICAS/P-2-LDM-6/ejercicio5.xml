@@ -24,5 +24,10 @@
             <sala></sala>
             <sesion></sesion>
         </cine>
+        <cine>
+            <nombre></nombre>
+            <sala></sala>
+            <sesion></sesion>
+        </cine>
     </cines>
 </cartelera>
