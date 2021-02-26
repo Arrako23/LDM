@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cartelera>
+    <peliculas>
+        <pelicula>
+            <titulo>La invención de Hugo</titulo>
+            <fecha>2011</fecha>
+            <director>Martin Scorsese</director>
+        </pelicula>
+        <pelicula>
+            <titulo>John Carter</titulo>
+            <fecha>2012</fecha>
+            <director>Andrew Stanton</director>
+        </pelicula>
+        <pelicula>
+            <titulo>Intocable</titulo>
+            <fecha>2012</fecha>
+            <director>Olivier Nakache</director>
+        </pelicula>
+    </peliculas>
+    <cines>
+        <cine>
+            <nombre></nombre>
+            <sala></sala>
+            <sesion></sesion>
+        </cine>
+    </cines>
+</cartelera>

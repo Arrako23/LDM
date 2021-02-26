@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sudokus [
+    <!ELEMENT sudokus (sudoku+)>
+    <!ELEMENT sudoku (dato*)>
+    <!ELEMENT dato (#PCDATA)>
+    <!ATTLIST sudoku tamano CDATA #REQUIRED>
+    <!ATTLIST sudoku solucion NMTOKEN #IMPLIED>
+    <!ATTLIST dato celda NMTOKEN #REQUIRED>
+    <!ATTLIST dato valor NMTOKEN #REQUIRED>
+]>
+<sudokus>
+    <sudoku tamano="4x4">
+    </sudoku>
+    <sudoku tamano="4x4" solucion="1">
+        <dato celda="A2" valor="1"/>
+        <dato celda="B2" valor="2"/>
+        <dato celda="A3" valor="3" />
+        <dato celda="D4" valor="1"/>
+    </sudoku>
+</sudokus>
