@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cartelera [
+    <!ELEMENT cartelera (peliculas+, cines+)>
+    <!ELEMENT peliculas (pelicula+)>
+    <!ELEMENT pelicula (#PCDATA)>
+    <!ELEMENT cines (cine+)>
+    <!ELEMENT cine (#PCDATA)>
+    <!ATTLIST pelicula id CDATA #REQUIRED>
+    <!ATTLIST pelicula nombre CDATA #REQUIRED>
+    <!ATTLIST pelicula fecha CDATA #REQUIRED>
+    <!ATTLIST pelicula director CDATA #REQUIRED>
+    <!ATTLIST cine id CDATA #REQUIRED>
+    <!ATTLIST cine nombre CDATA #REQUIRED>
+    <!ATTLIST cine sala CDATA #REQUIRED>
+    <!ATTLIST cine sesion CDATA #REQUIRED>
+]> 
+
 
 <cartelera>
     <peliculas>
-        <pelicula>
-            <titulo>La invención de Hugo</titulo>
-            <fecha>2011</fecha>
-            <director>Martin Scorsese</director>
+        <pelicula id="1" nombre="La invención de Hugo" fecha="2011" director="Martin Scorsese">
         </pelicula>
-        <pelicula>
-            <titulo>John Carter</titulo>
-            <fecha>2012</fecha>
-            <director>Andrew Stanton</director>
+        <pelicula id="2" nombre="John Carter" fecha="2012" director="Andrew Stanton">
         </pelicula>
-        <pelicula>
-            <titulo>Intocable</titulo>
-            <fecha>2012</fecha>
-            <director>Olivier Nakache</director>
+        <pelicula id="3" nombre="Intocable" fecha="2012" director="Olivier Nakache">
         </pelicula>
     </peliculas>
     <cines>
-        <cine>
-            <nombre></nombre>
-            <sala></sala>
-            <sesion></sesion>
+        <cine id="1" nombre="ABC El Saler" sala="Sala 6" sesion="17.30">
         </cine>
-        <cine>
-            <nombre></nombre>
-            <sala></sala>
-            <sesion></sesion>
+        <cine id="2" nombre="Lys" sala="Sala 3" sesion="20.00">
+        </cine>
+        <cine id="3" nombre="Cine Ortega" sala="Sala 1" sesion="22.45">
         </cine>
     </cines>
 </cartelera>

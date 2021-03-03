@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cartelera [
+    <!ELEMENT cartelera (peliculas+, cines+)>
+    <!ELEMENT peliculas (pelicula+)>
+    <!ELEMENT pelicula (id, titulo, fecha, director)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT director (#PCDATA)>
+    <!ELEMENT cines (cine+)>
+    <!ELEMENT cine (id, nombre, sala, sesion)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT sala (#PCDATA)>
+    <!ELEMENT sesion (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+]> 
+
+
+<cartelera>
+    <peliculas>
+        <pelicula>
+            <id>1</id>
+            <titulo>La invención de Hugo</titulo>
+            <fecha>2011</fecha>
+            <director>Martin Scorsese</director>
+        </pelicula>
+        <pelicula>
+            <id>2</id>
+            <titulo>John Carter</titulo>
+            <fecha>2012</fecha>
+            <director>Andrew Stanton</director>
+        </pelicula>
+        <pelicula>
+            <id>3</id>
+            <titulo>Intocable</titulo>
+            <fecha>2012</fecha>
+            <director>Olivier Nakache</director>
+        </pelicula>
+    </peliculas>
+    <cines>
+        <cine>
+            <id>1</id>
+            <nombre>ABC El Saler</nombre>
+            <sala>Sala 6</sala>
+            <sesion>17.30</sesion>
+        </cine>
+        <cine>
+            <id>2</id>
+            <nombre>Lys</nombre>
+            <sala>Sala 3</sala>
+            <sesion>20.00</sesion>
+        </cine>
+        <cine>
+            <id>3</id>
+            <nombre>Cine Ortega</nombre>
+            <sala>Sala 1</sala>
+            <sesion>22.45</sesion>
+        </cine>
+    </cines>
+</cartelera>

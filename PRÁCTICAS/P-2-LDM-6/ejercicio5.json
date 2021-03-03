@@ -1,0 +1,46 @@
+{
+    "cartelera": [
+        {
+            "peliculas": [
+                {
+                    "id": "1",
+                    "titulo": "La invención de Hugo",
+                    "fecha": "2011",
+                    "director": "Martin Scorsese"
+                },
+                {
+                    "id": "2",
+                    "titulo": "John Carter",
+                    "fecha": "2012",
+                    "director": "Andrew Stanton"
+                },
+                {
+                    "id": "3",
+                    "titulo": "Intocable",
+                    "fecha": "2012",
+                    "director": "Olivier Nakache"
+                }                 
+            ],
+            "cines": [
+                {
+                    "id": "1",
+                    "nombre": "ABC El Saler",
+                    "sala": "Sala 6",
+                    "sesion": "17.30"
+                },
+                {
+                    "id": "2",
+                    "nombre": "Lys",
+                    "sala": "Sala 3",
+                    "sesion": "20.00"
+                },
+                {
+                    "id": "3",
+                    "nombre": "Cine Ortega",
+                    "sala": "Sala 1",
+                    "sesion": "22.45"
+                }
+            ]
+        }
+    ]
+}
