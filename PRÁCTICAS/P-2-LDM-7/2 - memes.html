@@ -8,9 +8,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>VUEJS</title>
   </head>
-
+  <style>
+    #centrado{
+        text-align: center;
+    }
+</style>
   <body>
     <div id="app" class="container">
+      <div v-for="meme in jsonObject.data.memes">
+        <ul id="centrado">
+          <li><h2>{{meme.name}}</h2></li>
+          <li><img :src="meme.url"></li>
+          <li><h3>{{meme.width}} X {{meme.height}}</h3></li>
+        </ul>
+
+      </div>
     </div>
 
     <script>
@@ -22,7 +34,7 @@
         },
         methods: {
             init() {
-              fetch("https://pokeapi.co/api/v2/pokemon/1/")
+              fetch("https://api.imgflip.com/get_memes")
               .then(response => response.json())
               .then(data => (this.jsonObject = data));
             }

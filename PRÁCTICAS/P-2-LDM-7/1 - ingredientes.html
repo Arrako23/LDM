@@ -11,6 +11,19 @@
 
   <body>
     <div id="app" class="container">
+      <div v-for="name in jsonObject.drinks">
+        <h1>{{name.strDrink}}</h1>
+        <h2>Ingredientes</h2>
+        <h3>{{name.strCategory}}</h3>
+        <h4>{{name.strAlcoholic}}</h4>
+        <ol>
+          <li v-if="name['strIngredient'+n]" v-for="n in 15">
+            {{name['strIngredient'+n]}} ({{name['strMeasure'+n]}})
+          </li>
+        </ol>
+        <h5>{{name.strInstructions}}</h5>
+        <a :href="name.strImageSource"><img :src="name.strDrinkThumb"></a>
+      </div>
     </div>
 
     <script>
@@ -22,7 +35,7 @@
         },
         methods: {
             init() {
-              fetch("https://pokeapi.co/api/v2/pokemon/1/")
+              fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
               .then(response => response.json())
               .then(data => (this.jsonObject = data));
             }
