@@ -21,13 +21,12 @@
 </style>
 <body>
     <div id="app" class="container">
-        <div v-for="dato in jsonObject.results">
-            <ol>
-                <li>{{dato.gender}}</li>
-                <li>{{dato.name.first}}</li>
-                <li>{{dato.location.city}}</li>
-                <li>{{dato.email}}</li>
-            </ol>
+        <h1>VERDADES SOBRE GATOS</h1>
+        <div v-for="hecho in jsonObject">
+            <ul>
+                <li v-if="hecho.used == false" class="color1">{{hecho.text}}</li>
+                <li v-if="hecho.used == true" class="color2">{{hecho.text}}</li>
+            </ul>
         </div>
     </div>
 </body>
@@ -42,7 +41,7 @@
         },
         methods: {
             init() {
-                fetch("https://randomuser.me/api/")
+                fetch("https://cat-fact.herokuapp.com/facts")
                     .then(response => response.json())
                     .then(data => (this.jsonObject = data));
             }
