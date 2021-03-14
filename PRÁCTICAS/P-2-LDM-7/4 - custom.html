@@ -8,9 +8,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>VUEJS</title>
   </head>
-
-  <body>
+  <style>
+    .margen{
+      margin-top: 10%;
+    }
+    .espacio{
+      margin-bottom: 5%;
+    }
+  </style>
+  <body class="p-3 mb-2 bg-secondary text-white">
     <div id="app" class="container">
+      <div class="margen">
+        <ol v-for="apis in jsonObject.entries" class="espacio">
+          <li class="p-3 mb-2 bg-primary text-white">{{apis.API}}</li>
+          <li class="p-3 mb-2 bg-success text-white">{{apis.Description}}</li>
+          <li class="p-3 mb-2 bg-dark text-white"><a :href="apis.Link">Link</a></li>
+        </ol>
+      </div>
     </div>
 
     <script>
@@ -22,7 +36,7 @@
         },
         methods: {
             init() {
-              fetch("https://pokeapi.co/api/v2/pokemon/1/")
+              fetch("https://api.publicapis.org/entries")
               .then(response => response.json())
               .then(data => (this.jsonObject = data));
             }
