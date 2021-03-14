@@ -18,7 +18,7 @@ palabra3{
     margin:1%;
     float: left;
 }
-español{
+espanol{
  border: red 5px solid;
  display: block;
  margin-top: 2%;
@@ -26,20 +26,20 @@ español{
  margin-right: 2%;
  margin-bottom: 2%;
 }
-inglés{
+frances{
     border: blue 5px solid;
     display: block;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 2%;
 }
-francés{
+ingles{
     border: green 5px solid;
     display: block;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 2%;
 }
-español::first-letter{
+espanol::first-letter{
     color: red;
 }

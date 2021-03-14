@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="palabras.css"?>
+<palabras>
+    <palabra1>
+        <espanol>perro</espanol>
+        <frances>chien</frances>
+    </palabra1>
+    <palabra2>
+        <espanol>gato</espanol>
+        <ingles>cat</ingles>
+    </palabra2>
+    <palabra3>
+        <espanol>león</espanol>
+        <frances>lion</frances>
+        <ingles>lion</ingles>
+    </palabra3>
+</palabras>
