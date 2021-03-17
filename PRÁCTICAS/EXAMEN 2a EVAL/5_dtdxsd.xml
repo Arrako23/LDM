@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE arbol [
+  <!ELEMENT arbol (lugares+,personas+)>
+  <!ELEMENT lugares (lugar+)>
+  <!ELEMENT personas (persona+)>
+  <!ELEMENT lugar (#PCDATA)>
+  <!ELEMENT persona (nombre+, padre?, madre?, nacimiento+)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT padre (#PCDATA)>
+  <!ELEMENT madre (#PCDATA)>
+  <!ELEMENT nacimiento (#PCDATA)>
+  <!ATTLIST lugar nombre CDATA #REQUIRED>
+  <!ATTLIST lugar pais CDATA #REQUIRED>
+  <!ATTLIST nacimiento lugar CDATA #REQUIRED>
+  <!ATTLIST nacimiento fecha CDATA #IMPLIED>
+]>
 <arbol>
   <lugares>
     <lugar nombre="Valencia" pais="España" />

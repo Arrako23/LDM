@@ -1,6 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <persona>
-<nombre="Pepito Conejo">
-pepito.conejo@example.org
-<persona>
-<nombre>Juanita Banana</nombre>
-<telefono fijo>3141593</telefono fijo>
+    <email id="Pepito Conejo">pepito.conejo@example.org</email>
+    <nombre>Juanita Banana</nombre>
+    <telefono_fijo>3141593</telefono_fijo>
+</persona>

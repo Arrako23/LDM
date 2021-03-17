@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <examen>
-  <pregunta 1>
+  <pregunta_1>
   XML significa ...
-  </pregunta>
-  <respuesta correcta>
+  </pregunta_1>
+  <respuesta_correcta>
   ... eXtensible Markup Language
-  </respuesta>
+  </respuesta_correcta>
+</examen>
