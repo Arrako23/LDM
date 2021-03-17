@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<formula1 año="2011">
-<carrera>
-  <nombre>GP de Mónaco</nombre>
-  <fecha><dia>29</dia> de <mes>mayo</mes> de <año>2011</año></fecha>
-  <podium>
-    <orden n="1" nombre="Sebastian Vettel" escudería="Red Bull"/>
-    <orden n="2" nombre="Fernando Alonso" />
-    <orden n="3" nombre="Jenson Button" />
-  </podium>
-</carrera>
+<!DOCTYPE formula1 [
+  <!ELEMENT formula1 (carrera+)>
+  <!ELEMENT carrera (nombre+, fecha+, podium+)>
+  <!ELEMENT fecha (dia+, mes+, ano+)>
+  <!ELEMENT podium (orden+)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT dia (#PCDATA)>
+  <!ELEMENT mes (#PCDATA)>
+  <!ELEMENT ano (#PCDATA)>
+  <!ELEMENT orden (#PCDATA)>
+  <!ATTLIST formula1 year CDATA #REQUIRED>
+  <!ATTLIST orden n CDATA #REQUIRED>
+  <!ATTLIST orden nombre CDATA #REQUIRED>
+  <!ATTLIST orden escuderia CDATA #IMPLIED>
+]>
+<formula1 year="2011">
+  <carrera>
+    <nombre>GP de Mónaco</nombre>
+    <fecha>
+      <dia>29</dia>
+      <mes>mayo</mes>
+      <ano>2011</ano>
+    </fecha>
+    <podium>
+      <orden n="1" nombre="Sebastian Vettel" escuderia="Red Bull"/>
+      <orden n="2" nombre="Fernando Alonso" />
+      <orden n="3" nombre="Jenson Button" />
+    </podium>
+  </carrera>
 </formula1>
+

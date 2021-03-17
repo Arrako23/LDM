@@ -1,5 +1,13 @@
-<?xml version="1.0" encodin="UTE-8"?>
-<inventor id>Otto Blathy, Miksa Déri & Károly Zipernowsky
-<invento codigo=001>transformador eléctrico
-</inventor
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventos [
+<!ELEMENT inventos (inventor+)>
+<!ELEMENT inventor (invento+)>
+<!ELEMENT invento (#PCDATA)>
+<!ATTLIST inventor id CDATA #REQUIRED>
+<!ATTLIST invento codigo CDATA #REQUIRED>
+]>
+<inventos>
+    <inventor id="Otto Blathy, Miksa Déri y Károly Zipernowsky">
+        <invento codigo="001">transformador eléctrico</invento>
+    </inventor>
 </inventos>

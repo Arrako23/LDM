@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Prueba segunda evaluación</title>
+</head>
+
+
+<body class="p-3 mb-2 bg-success text-white">
+    <div id="app" class="container">
+        <div>
+            <ul v-for="beer in jsonObject">
+                <li><h2><u>{{beer.name}}</u></h2></li>
+                <li>{{beer.tagline}}</li>
+                <li>{{beer.description}}</li>
+                <li><a :href="beer.image_url"><img :src="beer.image_url" width="10%"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+    const App = new Vue({
+        el: '#app',
+        data: {
+            jsonObject: {}
+        },
+        methods: {
+            init() {
+                fetch("https://api.punkapi.com/v2/beers?per_page=5")
+                    .then(response => response.json())
+                    .then(data => (this.jsonObject = data));
+            }
+        },
+        mounted() {
+            this.init()
+        }
+    })
+</script>
+
+</html>

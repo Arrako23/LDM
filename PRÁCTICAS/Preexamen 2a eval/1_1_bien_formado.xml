@@ -1,7 +1,8 @@
-<documento>
-  <autor />Bartolomé Sintes Marco
-  <fecha fecha=30/05/11>
+<?xml version="1.0" encoding="UTF-8"?>
+<documentos>
+  <autor>Bartolomé Sintes Marco</autor>
+  <fecha>30/05/11</fecha>
   <contenido>
-  <punto 1>XML significa eXtensible Markup Languages</punto 1>
+    <punto_1>XML significa eXtensible Markup Languages</punto_1>
   </contenido>
 </documentos>
