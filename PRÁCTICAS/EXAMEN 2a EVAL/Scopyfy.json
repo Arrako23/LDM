@@ -1,0 +1,58 @@
+{
+    "usuario": [
+        {
+            "user": "Felipe Lotas",
+            "email": "f.pelotas@aol.com",
+            "id_user": "1234",
+            "biblioteca": [
+                {
+                    "playlists": [
+                        {
+                            "playlist1": "CAÑERA",
+                            "playlist2": "DEPORTES",
+                            "playlist3": "ROMANTICA",
+                            "playlist4": "FIESTERA"
+                        }
+                    ],
+                    "canciones_favoritas": [
+                        {
+                            "song": [
+                                {
+                                    "id": "555",
+                                    "nombre": "Wait and Bleed",
+                                    "duracion": "3:42",
+                                    "tipo": "Metal"
+                                },
+                                {
+                                    "id": "666",
+                                    "nombre": "Still D.R.E.",
+                                    "duracion": "4:26",
+                                    "tipo": "Hip-Hop"
+                                },
+                                {
+                                    "id": "777",
+                                    "nombre": "Smack My Bitch Up",
+                                    "duracion": "5:14",
+                                    "tipo": "Electronica"
+                                },
+                                {
+                                    "id": "888",
+                                    "nombre": "El Lado Equivocado",
+                                    "duracion": "2:52",
+                                    "tipo": "Rap-Metal"
+                                }
+                            ]
+                        }
+                    ],
+                    "albumes_favoritos": [
+                        {
+                            "album1": "Nevermind",
+                            "album2": "S.C.I.E.N.C.E.",
+                            "album3": "Chocolate Starfish"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

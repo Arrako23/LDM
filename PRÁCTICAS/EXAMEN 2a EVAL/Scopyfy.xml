@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE usuario [
+    <!ELEMENT usuario (user, email, id_user, biblioteca)>
+    <!ELEMENT user (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT id_user (#PCDATA)>
+    <!ELEMENT biblioteca (playlists*, canciones_favoritas*, albumes_favoritos*)>
+    <!ELEMENT playlists (playlist*)>
+    <!ELEMENT playlist (#PCDATA)>
+    <!ELEMENT canciones_favoritas (song*)>
+    <!ELEMENT song (nombre, duracion, tipo)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT duracion (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT albumes_favoritos (album*)>
+    <!ELEMENT album (#PCDATA)>
+    <!ATTLIST song id CDATA #REQUIRED>
+]>
+<usuario>
+    <user>Felipe Lotas</user>
+    <email>f.pelotas@aol.com</email>
+    <id_user>1234</id_user>
+    <biblioteca>
+        <playlists>
+            <playlist>CAÑERA</playlist>
+            <playlist>DEPORTES</playlist>
+            <playlist>ROMANTICA</playlist>
+            <playlist>FIESTERA</playlist>
+        </playlists>
+        <canciones_favoritas>
+            <song id="555">
+                <nombre>Wait and Bleed</nombre>
+                <duracion>3:42</duracion>
+                <tipo>Metal</tipo>
+            </song>
+            <song id="666">
+                <nombre>Still D.R.E.</nombre>
+                <duracion>4:26</duracion>
+                <tipo>Hip-Hop</tipo>
+            </song>
+            <song id="777">
+                <nombre>Smack My Bitch Up</nombre>
+                <duracion>5:14</duracion>
+                <tipo>Electronica</tipo>
+            </song>
+            <song id="888">
+                <nombre>El Lado Equivocado</nombre>
+                <duracion>2:52</duracion>
+                <tipo>Rap-Metal</tipo>
+            </song>
+        </canciones_favoritas>
+        <albumes_favoritos>
+            <album>Nevermind</album>
+            <album>S.C.I.E.N.C.E.</album>
+            <album>Chocolate Starfish</album>
+        </albumes_favoritos>
+    </biblioteca>
+</usuario>
