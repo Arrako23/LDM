@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Examen Segunda evaluación</title>
+</head>
+<b><h1>PERSONAJES DE BREAKING BAD</h1></b>
+<body class="p-3 mb-2 bg-secondary text-dark">
+    <div id="app" class="container"  id="app">
+        <button @click="mostrarBB = true" v-if="!mostrarBB" class="btn btn-primary">Mostrar más</button>
+        <button @click="mostrarBB = false" v-if="mostrarBB" class="btn btn-primary">Mostrar menos</button>
+        <div class="row">
+            <div class="card col-sm-6 col-md-3" style="width: 18rem;" v-for="bad in jsonObject"  v-if="bad.appearance.length != 0 && bad.better_call_saul_appearance.lenght != 0">
+                <div>
+                    <img class="card-img-top" :src="bad.img" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{bad.name}}</h5>
+                        <u><p class="card-text">{{bad.status}}</p></u>
+                        <ul><b>TEMPORADAS DE BREAKING BAD</b>
+                            <li v-for="appearance in bad.appearance">T:{{appearance}}</li>
+                        </ul>
+                        <ul><b>TEMPORADAS DE BETTER CALL SAUL</b>
+                            <li v-for="appearance in bad.better_call_saul_appearance">T:{{appearance}}</li>
+                        </ul>
+                        <a :href="bad.img" class="btn btn-primary">IMAGE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <b><h1>PERSONAJES DE BETTER CALL SAUL</h1></b>
+    
+        <div class="row">
+            <div class="card col-sm-6 col-md-3" style="width: 18rem;" v-for="saul in jsonObject"  v-if="saul.appearance.length == 0">
+                <div>
+                    <img class="card-img-top" :src="saul.img" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{saul.name}}</h5>
+                        <u><p class="card-text">{{saul.status}}</p></u>
+                        <ul><b>TEMPORADAS DE BETTER CALL SAUL</b>
+                            <li v-for="appearance in saul.better_call_saul_appearance">T:{{appearance}}</li>
+                        </ul>
+                        <a :href="saul.img" class="btn btn-primary">IMAGE</a>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+    const App = new Vue({
+        el: '#app',
+        data: {
+            jsonObject: {},
+            mostrarBB: false,
+            mostrarBCS: false,
+        },
+        methods: {
+            init() {
+                fetch("https://breakingbadapi.com/api/characters")
+                    .then(response => response.json())
+                    .then(data => (this.jsonObject = data));
+            },
+            showBB(){
+                      this.mostrarBB = true
+                  },
+                  hideBB(){
+                    this.mostrarBB = false
+                  },
+                  showBCS(){
+                      this.mostrarBCS = true
+                  },
+                  hideBCS(){
+                    this.mostrarBCS = false
+                  },
+        },
+        mounted() {
+            this.init()
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Pokemon List</title>
+  </head>
+
+  <body>
+    <div id="app" class="container">
+        <h1>Pokemon</h1>
+        <div class="row">
+          <div class="card col-sm-4" style="width: 18rem;" v-for="(pokemon, key) in jsonPokemon.results">
+            <div class="card-body">
+              <h5 class="card-title">{{pokemon.name}}</h5>
+              <a href="#" @click="mostrarDetalles(key, pokemon.url)" class="btn btn-primary">Mostrar detalles</a>
+              <div v-if="mostrar == key" class="alert alert-primary" role="alert">
+                <img v-if="detalles.sprites" :src="detalles.sprites.front_default" />
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script>
+
+      const App = new Vue({
+        el: '#app',
+        data: {
+          jsonPokemon: {},
+          detalles: {},
+          mostrar: -1
+        },
+        methods: {
+            init() {
+              fetch("https://pokeapi.co/api/v2/pokemon/?offset=200")
+              .then(response => response.json())
+              .then(data => (this.jsonPokemon = data));
+            },mostrarDetalles(key, url) {
+              this.mostrar = key;
+
+              fetch(url)
+              .then(response => response.json())
+              .then(data => (this.detalles = data));
+            }
+        },
+        mounted(){
+            this.init()
+        }
+      })
+    </script>
+  </body>
+</html>

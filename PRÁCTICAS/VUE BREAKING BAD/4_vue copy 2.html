@@ -14,17 +14,7 @@
 
 <body>
     <div id="app" class="container">
-        <div v-for="serie in jsonObject">
-            <u><h2>{{serie.show.name}}</h2></u>
-            <h3>{{serie.show.language}}</h3>
-            <h3>{{serie.show.type}}</h3>
-            <img v-if="serie.show.image" :src="serie.show.image.medium">
-            <img v-else src="https://www.redeszone.net/app/uploads/2018/08/error-503-655x318.jpg"/><br>
-            <a :href="serie.show.officialSite">PÁGINA OFICIAL</a>
-            <ol>
-                <li v-for="genero in serie.show.genres">{{genero}}</li>
-            </ol>
-        </div>
+        {{jsonObject}}
     </div>
 </body>
 
@@ -38,7 +28,7 @@
         },
         methods: {
             init() {
-                fetch("http://api.tvmaze.com/search/shows?q=sports")
+                fetch("https://breakingbadapi.com/api/")
                     .then(response => response.json())
                     .then(data => (this.jsonObject = data));
             }
