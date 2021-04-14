@@ -1,0 +1,4 @@
+for $baile in doc ('bailes.xml')//bailes/baile
+let $n:=$baile/nombre
+where $baile/sala = 1
+return data($n)
