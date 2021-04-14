@@ -1,0 +1,26 @@
+<table>
+<tr>
+	<th>Nombre</th>
+	<th>Profesor</th>
+	<th>Sala</th>
+	<th>Comienzo</th>
+	<th>Fin</th>
+</tr>
+{
+for $baile in doc('bailes.xml')//bailes/baile
+let $nombre:=$baile/nombre
+let $profesor:=$baile/profesor
+let $sala:=$baile/sala
+let $inicio:=$baile/comienzo
+let $fin:=$baile/fin
+where $baile/sala = 1
+return
+<tr>
+	<td>{data($nombre)}</td>
+	<td>{data($profesor)}</td>
+	<td>{data($sala)}</td>
+	<td>{data($inicio)}</td>
+	<td>{data($fin)}</td>
+</tr>
+}
+</table>
