@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+
+<cine>
+    <peliculas>
+                <pelicula>
+                    <idPelicula>1</idPelicula>
+                    <titulo>Avatar</titulo>
+                    <duracion>2:50:00</duracion>
+                    <año>2011</año>
+                    <protagonista>Will smith</protagonista>
+                    <director>
+                        <idDirector>1</idDirector>
+                        <nombre>Joseph</nombre>
+                        <apellido>kenddy<apellido>
+                        <nacionalidad>Ingles</nacionalidad>
+                        <genero>Masculino</genero>
+                    </director>
+                    <actores>
+                        <actor>
+                            <idActor>1</idActor>
+                            <nombre>Will</nombre>
+                            <apellido>smith</apellido>
+                            <nacionalidad>Español</nacionalidad>
+                            <genero>Masculino</genero>
+                        </actor>
+                    </actores>
+                </pelicula>
+                <pelicula>
+                    <idPelicula>2</idPelicula>
+                    <titulo>Harry Potter</titulo>
+                    <duracion>2:00:00</duracion>
+                    <año>2002</año>
+                    <protagonista>Vin diesel</protagonista>
+                    <director>
+                        <idDirector>2</idDirector>
+                        <nombre>Joanne</nombre>
+                        <apellido>Rowling<apellido>
+                        <nacionalidad>Española</nacionalidad>
+                        <genero>femenino</genero>
+                    </director>
+                    <actores>
+                        <actor>
+                            <idActor>2</idActor>
+                            <nombre>Vin</nombre>
+                            <apellido>diesel</apellido>
+                            <nacionalidad>Ruso</nacionalidad>
+                            <genero>Masculino</genero>
+                        </actor>
+                    </actores>
+                </pelicula>
+                <pelicula>
+                    <idPelicula>3</idPelicula>
+                    <titulo>Dumbo</titulo>
+                    <duracion>1:40:00</duracion>
+                    <año>1995</año>
+                    <protagonista>Dwayne Jhonson</protagonista>
+                    <director>
+                        <idDirector>3</idDirector>
+                        <nombre>Adolfo</nombre>
+                        <apellido>Berwick<apellido>
+                        <nacionalidad>Irlandes</nacionalidad>
+                        <genero>Masculino</genero>
+                    </director>
+                    <actores>
+                        <actor>
+                            <idActor>3</idActor>
+                            <nombre>Dwayne</nombre>
+                            <apellido> Jhonson</apellido>
+                            <nacionalidad>Ingles</nacionalidad>
+                            <genero>Masculino</genero>
+                        </actor>
+                    </actores>
+                </pelicula>
+    </peliculas>
+</cine>
