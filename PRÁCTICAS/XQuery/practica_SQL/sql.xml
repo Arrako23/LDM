@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE practica_ldm [
+    <!ELEMENT practica_ldm (alumnos, asignaturas, notas)>
+    <!ELEMENT alumnos (alumno+)>
+    <!ELEMENT alumno (cod, apenom, direc, pobla, telef+)>
+    <!ELEMENT cod (#PCDATA)>
+    <!ELEMENT apenom (#PCDATA)>
+    <!ELEMENT direc (#PCDATA)>
+    <!ELEMENT pobla (#PCDATA)>
+    <!ELEMENT telef (#PCDATA)>
+    <!ELEMENT asignaturas (asignatura+)>
+    <!ELEMENT asignatura (cod, nombre)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT notas (nota+)>
+    <!ELEMENT nota (alum, asig, calificacion)>
+    <!ELEMENT alum (#PCDATA)>
+    <!ELEMENT asig (#PCDATA)>
+    <!ELEMENT calificacion (#PCDATA)>
+]>
+<practica_ldm>
+    <alumnos>
+        <alumno>
+            <cod>n12344345</cod>
+            <apenom>Alcalde García, Luis</apenom>
+            <direc>Las Manos, 24</direc>
+            <pobla>Lamadrid</pobla>
+            <telef>942756645</telef>
+        </alumno>
+        <alumno>
+            <cod>n43483437</cod>
+            <apenom>González Pérez, Olga</apenom>
+            <direc>Miraflor 28 - 3A</direc>
+            <pobla>Torres</pobla>
+            <telef>942564355</telef>
+        </alumno>
+        <alumno>
+            <cod>n88234942</cod>
+            <apenom>Fernández Díaz, María</apenom>
+            <direc>Luisa Fernanda 53</direc>
+            <pobla>Miera</pobla>
+            <telef>942346945</telef>
+        </alumno>
+    </alumnos>
+    <asignaturas>
+        <asignatura>
+            <cod>a1</cod>
+            <nombre>FH</nombre>
+        </asignatura>
+        <asignatura>
+            <cod>a2</cod>
+            <nombre>FOL</nombre>
+        </asignatura>
+        <asignatura>
+            <cod>a3</cod>
+            <nombre>ISO</nombre>
+        </asignatura>
+        <asignatura>
+            <cod>a4</cod>
+            <nombre>LMSGI</nombre>
+        </asignatura>
+        <asignatura>
+            <cod>a5</cod>
+            <nombre>PAR</nombre>
+        </asignatura>
+        <asignatura>
+            <cod>a6</cod>
+            <nombre>GBD</nombre>
+        </asignatura>
+    </asignaturas>
+    <notas>
+        <nota>
+            <alum>n12344345</alum>
+            <asig>a1</asig>
+            <calificacion>4</calificacion>
+        </nota>
+        <nota>
+            <alum>n43483437</alum>
+            <asig>a1</asig>
+            <calificacion>5</calificacion>
+        </nota>
+        <nota>
+            <alum>n88234942</alum>
+            <asig>a1</asig>
+            <calificacion>8</calificacion>
+        </nota>
+        <nota>
+            <alum>n12344345</alum>
+            <asig>a2</asig>
+            <calificacion>10</calificacion>
+        </nota>
+        <nota>
+            <alum>n43483437</alum>
+            <asig>a2</asig>
+            <calificacion>7</calificacion>
+        </nota>
+        <nota>
+            <alum>n88234942</alum>
+            <asig>a2</asig>
+            <calificacion>6</calificacion>
+        </nota>
+        <nota>
+            <alum>n12344345</alum>
+            <asig>a3</asig>
+            <calificacion>3</calificacion>
+        </nota>
+        <nota>
+            <alum>n88234942</alum>
+            <asig>a3</asig>
+            <calificacion>6</calificacion>
+        </nota>
+        <nota>
+            <alum>n12344345</alum>
+            <asig>a4</asig>
+            <calificacion>8</calificacion>
+        </nota>
+        <nota>
+            <alum>n43483437</alum>
+            <asig>a4</asig>
+            <calificacion>4</calificacion>
+        </nota>
+        <nota>
+            <alum>n12344345</alum>
+            <asig>a5</asig>
+            <calificacion>6</calificacion>
+        </nota>
+        <nota>
+            <alum>n12344345</alum>
+            <asig>a6</asig>
+            <calificacion>9</calificacion>
+        </nota>
+    </notas>
+</practica_ldm>
