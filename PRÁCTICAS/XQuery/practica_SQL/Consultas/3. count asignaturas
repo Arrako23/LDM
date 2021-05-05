@@ -1,0 +1,2 @@
+for $asignatura in doc('alumnos_fp.xml')//practica_ldm/asignaturas
+return count($asignatura/asignatura)

@@ -1,0 +1,2 @@
+for $name in doc("alumnos_fp.xml")//practica_ldm/asignaturas/asignatura
+return $name/nombre

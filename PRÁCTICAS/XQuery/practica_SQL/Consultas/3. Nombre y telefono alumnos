@@ -1,0 +1,4 @@
+
+for $datos in doc('alumnos_fp.xml')//practica_ldm/alumnos/alumno
+return $datos/(apenom|telef)
+

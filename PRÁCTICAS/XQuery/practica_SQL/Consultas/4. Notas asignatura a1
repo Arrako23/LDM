@@ -1,0 +1,3 @@
+for $nota in doc("alumnos_fp.xml")//practica_ldm/notas/nota
+where $nota/asig = "a1"
+return $nota/calificacion

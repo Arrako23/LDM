@@ -1,0 +1,2 @@
+doc("alumnos_fp.xml")//practica_ldm/notas/nota[asig = "a1"]/calificacion
+
