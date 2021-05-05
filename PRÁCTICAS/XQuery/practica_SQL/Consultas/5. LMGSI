@@ -1,6 +1,6 @@
 for $a in doc('alumnos_fp.xml')//practica_ldm/asignaturas/asignatura
 for $b in doc('alumnos_fp.xml')//practica_ldm/alumnos/alumno
 for $c in doc('alumnos_fp.xml')//practica_ldm/notas/nota
-where $a/nombre = "LMSGI" and $c = "a4"
+where $a/nombre = "LMSGI" and $c = "a4" and $b/cod = $c/alum
 order by $c/calificacion
 return ($b/apenom|$c/calificacion)
