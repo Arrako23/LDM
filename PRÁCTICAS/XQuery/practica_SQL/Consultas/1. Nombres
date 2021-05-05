@@ -1,2 +1,5 @@
-for $name in doc('alumnos_fp.xml')//practica_ldm/alumnos/alumno
-return $name/apenom
+for $a in doc('alumnos_fp.xml')//practica_ldm/alumnos/alumno
+for $b in doc('alumnos_fp.xml')//practica_ldm/notas/nota
+where $a/cod =$b/alum
+group by $a
+return $a/apenom
