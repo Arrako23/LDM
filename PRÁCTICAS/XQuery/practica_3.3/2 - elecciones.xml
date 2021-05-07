@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elecciones>
+  <partidos>
+    <partido nombre="PPCV">Partido Popular de la Comunidad Valenciana</partido>
+    <partido nombre="PSPV">Partido Socialista del País Valenciano</partido>
+    <partido nombre="CC">Coalició Compromís</partido>
+    <partido nombre="EUPV">Esquerra Unida del País Valencià</partido>
+    <partido nombre="P">Podemos</partido>
+    <partido nombre="Cs">Ciudadanos - Partido de la Ciudadanía</partido>
+  </partidos>
+  <resultados>
+    <eleccion año="2007" nombre="Cortes Valencianas">
+      <fecha>27/05/2007</fecha>
+      <partido nombre="PPCV" candidato="Francisco Camps">54</partido>
+      <partido nombre="PSPV" candidato="Joan Ignasi Pla">38</partido>
+      <partido nombre="EUPV" candidato="Gloria Marcos">7</partido>
+    </eleccion>
+    <eleccion año="2011" nombre="Cortes Valencianas">
+      <fecha>22/05/2011</fecha>
+      <partido nombre="PPCV" candidato="Francisco Camps">55</partido>
+      <partido nombre="PSPV" candidato="Jorge Alarte">33</partido>
+      <partido nombre="CC" candidato="Enric Morera">6</partido>
+      <partido nombre="EUPV" candidato="Marga Sanz">5</partido>
+    </eleccion>
+    <eleccion año="2015" nombre="Cortes Valencianass">
+      <fecha>24/05/2015</fecha>
+      <partido nombre="PPCV" candidato="Alberto Fabra"></partido>
+      <partido nombre="PSPV" candidato="Ximo Puig"></partido>
+      <partido nombre="Cs" candidato="Carolina Punset"></partido>
+      <partido nombre="P" candidato="Antonio Montiel"></partido>
+      <partido nombre="CC" candidato="Mònica Oltra"></partido>
+      <partido nombre="EUPV" candidato="Ignacio Blanco"></partido>
+    </eleccion>
+  </resultados>
+  <encuestas>
+    <encuesta año="2011" nombre="Cortes Valencianas">
+      <fecha>15/05/2011</fecha>
+      <origen>El País</origen>
+      <partido nombre="PPCV">59</partido>
+      <partido nombre="PSPV">33</partido>
+      <partido nombre="CC">0</partido>
+      <partido nombre="EUPV">7</partido>
+    </encuesta>
+    <encuesta año="2015" nombre="Cortes Valencianas">
+      <fecha>18/05/2015</fecha>
+      <origen>Levante-EMV</origen>
+      <partido nombre="PPCV">27</partido>
+      <partido nombre="PSPV">20</partido>
+      <partido nombre="Cs">19</partido>
+      <partido nombre="P">14</partido>
+      <partido nombre="CC">13</partido>
+      <partido nombre="EUPV">6</partido>
+    </encuesta>
+  </encuestas>
+</elecciones>
